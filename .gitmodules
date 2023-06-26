@@ -1,0 +1,6 @@
+[submodule "config/emacy"]
+	path = config/emacy
+	url = git@github.com:liszt21/emacy
+[submodule "config/lisux"]
+	path = config/lisux
+	url = git@github.com:liszt21/lisux
