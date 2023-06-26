@@ -3,3 +3,8 @@ build
 
 config/guix/current
 config/rime
+
+*.errors
+*.x86_64-linux
+.stack-work
+stack.yaml.lock

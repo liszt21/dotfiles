@@ -4,3 +4,9 @@
 [submodule "config/lisux"]
 	path = config/lisux
 	url = git@github.com:liszt21/lisux
+[submodule "config/xmonad/packages/xmonad"]
+	path = config/xmonad/packages/xmonad
+	url = http://github.com/xmonad/xmonad
+[submodule "config/xmonad/packages/xmonad-contrib"]
+	path = config/xmonad/packages/xmonad-contrib
+	url = http://github.com/xmonad/xmonad-contrib
