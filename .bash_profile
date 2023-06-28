@@ -1,1 +1,0 @@
-if [ -f "$HOME/Dotfiles/script/kit.sh" ]; then source "$HOME/Dotfiles/script/kit.sh"; fi
