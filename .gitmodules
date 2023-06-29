@@ -1,12 +1,12 @@
-[submodule "config/emacy"]
-	path = config/emacy
+[submodule "module/emacy"]
+	path = module/emacy
 	url = git@github.com:liszt21/emacy
-[submodule "config/lisux"]
-	path = config/lisux
+[submodule "module/lisux"]
+	path = module/lisux
 	url = git@github.com:liszt21/lisux
-[submodule "config/xmonad/packages/xmonad"]
-	path = config/xmonad/packages/xmonad
-	url = http://github.com/xmonad/xmonad
-[submodule "config/xmonad/packages/xmonad-contrib"]
-	path = config/xmonad/packages/xmonad-contrib
-	url = http://github.com/xmonad/xmonad-contrib
+[submodule "module/vimmy"]
+	path = module/vimmy
+	url = git@github.com:liszt21/vimmy
+[submodule "module/xmoig"]
+	path = module/xmoig
+	url = git@github.com:liszt21/xmoig
