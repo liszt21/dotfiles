@@ -1,9 +1,9 @@
-[submodule "module/emacy"]
-	path = module/emacy
-	url = git@github.com:liszt21/emacy
 [submodule "module/lisux"]
 	path = module/lisux
 	url = git@github.com:liszt21/lisux
+[submodule "module/emacy"]
+	path = module/emacy
+	url = git@github.com:liszt21/emacy
 [submodule "module/vimmy"]
 	path = module/vimmy
 	url = git@github.com:liszt21/vimmy
