@@ -1,0 +1,7 @@
+build
+*.userdb
+
+config/guix/current
+config/rime
+
+*.errors
