@@ -1,4 +1,5 @@
 (use-modules
+  (guix gexp)
   (gnu home)
   (gnu packages)
   (gnu packages base)
@@ -8,7 +9,6 @@
   (gnu services)
   (gnu services nix)
   (gnu services mcron)
-  (guix gexp)
   (gnu home services)
   (gnu home services mcron)
   (gnu home services shells)
@@ -35,10 +35,10 @@
 
 (define minisforum? (if (eq? machine-name "minisforum") #t #f))
 
-(define font-packages (list "font-sarasa-gothic" "font-adobe-source-code-pro" "font-fira-code" "font-lxgw-wenkai" "font-gnu-unifont" "emacs-all-the-icons"))
-(define emacs-packages (list "emacs-vterm" "emacs-rime" "tree-sitter-python" "tree-sitter-julia" "tree-sitter-typescript" "tree-sitter-javascript" "tree-sitter-c" "tree-sitter-cpp" "mu" "offlineimap3" "isync" "msmtp"))
-(define common-packages (list "glibc-locales" "git" "unzip" "zile" "recutils" "findutils" "syncthing" "fish" "bat" "neovim" "docker" "librime")) 
 (define linux-packages (list ""))
+(define emacs-packages (list "emacs-vterm" "emacs-rime" "tree-sitter-python" "tree-sitter-julia" "tree-sitter-typescript" "tree-sitter-javascript" "tree-sitter-c" "tree-sitter-cpp" "mu" "offlineimap3" "isync" "msmtp" "libvterm"))
+(define common-packages (list "glibc-locales" "git" "unzip" "zile" "recutils" "findutils" "syncthing" "fish" "bat" "neovim" "docker" "librime")) 
+(define font-packages (list "font-sarasa-gothic" "font-adobe-source-code-pro" "font-fira-code" "font-lxgw-wenkai" "font-gnu-unifont" "emacs-all-the-icons"))
 (define minisforum-package (list "nyxt" "qemu" "virt-manager" "virt-viewer" "vlc" "mpv" "gimp" "blender" "python-pywal" "mpv" "yt-dlp" "ffmpeg" "tesseract-ocr" "tesseract-ocr-tessdata-fast" "xclip"))
 
 (define common-services 
