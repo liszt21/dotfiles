@@ -1,3 +1,6 @@
+source "$HOME/Dotfiles/script/kit.sh"
+try-init-kit
+
 export GPG_TTY=$(tty)
 export GIT_SSL_NO_VERIFY=1
 
@@ -15,11 +18,8 @@ export PATH=~/.emacs.d/bin:~/.roswell/bin:~/.local/bin:~/.guix-profile/bin:~/.ni
 # Hooks
 eval "$(zoxide init bash)"
 eval "$(direnv hook bash)"
-eval "$(starship init bash)"
-eval "$(conda shell.bash hook)"
-# eval "$(atuin init bash)"
+# eval "$(starship init bash)"
+# eval "$(conda shell.bash hook)"
 # eval "$(emacy hook bash)"
 
-source "$HOME/Dotfiles/script/kit.sh"
-try-init-kit
-conda activate
+# conda activate
