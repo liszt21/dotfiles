@@ -91,6 +91,7 @@
 
 (define graph-packages
   (list
+    "ghc"
     "sddm"
     "rofi"
     "picom"
@@ -107,7 +108,7 @@
          (environment-variables `(("GTK_IM_MODULE" . "fcitx")
                                   ("TESSDATA_PREFIX" . "${HOME}/.guix-home/profile/share/tessdata")))
          (aliases '(("emacy" . "emacs --init-directory ~/Dotfiles/module/emacy/profiles/emacy")))
-         (bashrc (list (local-file "bashrc")))))))
+         (bashrc (list (local-file "config/bash/config")))))))
 
 (home-environment
   (packages

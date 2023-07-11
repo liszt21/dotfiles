@@ -1,12 +1,12 @@
 (list 
-  (channel
-    (name 'lisux)
-    (url "https://gitee.com/liszt21/lisux.git")
-    (introduction
-     (make-channel-introduction
-      "d4ad130614963334f3f94a8b5f6ad7d1ba4eac3e"
-      (openpgp-fingerprint
-       "ABFC 5483 F3F7 1C39 922E  2E42 0EEA FA02 DA3C 7513"))))
+  ; (channel
+  ;   (name 'lisux)
+  ;   (url "https://gitee.com/liszt21/lisux.git")
+  ;   (introduction
+  ;    (make-channel-introduction
+  ;     "d4ad130614963334f3f94a8b5f6ad7d1ba4eac3e"
+  ;     (openpgp-fingerprint
+  ;      "ABFC 5483 F3F7 1C39 922E  2E42 0EEA FA02 DA3C 7513"))))
   (channel
     (name 'nonguix)
     (url "https://gitee.com/liszt21/nonguix.git")
