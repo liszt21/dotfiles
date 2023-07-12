@@ -7,6 +7,6 @@
 [submodule "module/vimmy"]
 	path = module/vimmy
 	url = git@github.com:liszt21/vimmy
-[submodule "module/xmoig"]
-	path = module/xmoig
-	url = git@github.com:liszt21/xmoig
+[submodule "module/grask"]
+	path = module/grask
+	url = git@github.com:liszt21/grask
