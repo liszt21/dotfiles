@@ -41,10 +41,12 @@
     "font-lxgw-wenkai" 
     "font-gnu-unifont" 
     "emacs-all-the-icons"))
+ 
 (define linux-packages 
   (list 
     "zoxide" 
     "direnv"))
+
 (define emacs-packages 
   (list 
     "mu" 
@@ -60,6 +62,7 @@
     "tree-sitter-python"
     "tree-sitter-typescript"
     "tree-sitter-javascript"))
+
 (define common-packages 
   (list 
     "glibc-locales"
@@ -71,8 +74,8 @@
     "docker" 
     "recutils"
     "findutils"
-    "python-pywal"
     "syncthing")) 
+
 (define minisforum-packages
   (list 
     "vlc"
@@ -91,13 +94,16 @@
 
 (define graph-packages
   (list
+    "feh"
     "ghc"
     "sddm"
     "rofi"
     "picom"
+    "conky"
     "xmonad"
     "stumpwm"
     "xorg-server"
+    "python-pywal"
     "ghc-xmonad-contrib"))
 
 (define common-services 
