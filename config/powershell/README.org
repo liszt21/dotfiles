@@ -1,0 +1,7 @@
+#+TITLE: Powershell profiles
+
+* doc
+[[https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3][about profile]]
+#+BEGIN_SRC 
+sudo ln -s "$PWD\profile.ps1" $PROFILE.CurrentUserAllHosts
+#+END_SRC
