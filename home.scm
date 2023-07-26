@@ -35,7 +35,7 @@
 
 (define font-packages 
   (list 
-    "font-sarasa-gothic" 
+    ;;"font-sarasa-gothic" 
     "font-adobe-source-code-pro" 
     "font-fira-code" 
     "font-lxgw-wenkai" 
@@ -57,11 +57,29 @@
     "libvterm"
     "offlineimap3"
     "tree-sitter-c"
+    "tree-sitter-go"
     "tree-sitter-cpp"
+    "tree-sitter-elm"
+    "tree-sitter-css"
+    ; "tree-sitter-php"
+    "tree-sitter-org"
+    ; "tree-sitter-ruby"
+    "tree-sitter-bash"
+    "tree-sitter-rust"
+    "tree-sitter-json"
+    "tree-sitter-java"
+    "tree-sitter-html"
     "tree-sitter-julia"
+    ; "tree-sitter-ocaml"
     "tree-sitter-python"
+    "tree-sitter-scheme"
+    ; "tree-sitter-racket"
+    "tree-sitter-clojure"
+    "tree-sitter-haskell"
+    "tree-sitter-markdown"
     "tree-sitter-typescript"
-    "tree-sitter-javascript"))
+    "tree-sitter-javascript"
+    "emacs-next-tree-sitter"))
 
 (define common-packages 
   (list 
@@ -101,7 +119,11 @@
     "picom"
     "conky"
     "xmonad"
+    "cabal-install"
+    "sbcl"
     "stumpwm"
+    "sbcl-stumpwm-swm-gaps"
+    "sbcl-stumpwm-ttf-fonts"
     "xorg-server"
     "python-pywal"
     "ghc-xmonad-contrib"))
@@ -111,6 +133,7 @@
     (service
        home-bash-service-type
        (home-bash-configuration
+         (guix-defaults? #t)
          (environment-variables `(("GTK_IM_MODULE" . "fcitx")
                                   ("TESSDATA_PREFIX" . "${HOME}/.guix-home/profile/share/tessdata")))
          (aliases '(("emacy" . "emacs --init-directory ~/Dotfiles/module/emacy/profiles/emacy")))
