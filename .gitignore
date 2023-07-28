@@ -5,3 +5,5 @@ config/guix/current
 config/rime
 
 *.errors
+
+history.txt

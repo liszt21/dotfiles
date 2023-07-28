@@ -41,11 +41,6 @@
     "font-lxgw-wenkai" 
     "font-gnu-unifont" 
     "emacs-all-the-icons"))
- 
-(define linux-packages 
-  (list 
-    "zoxide" 
-    "direnv"))
 
 (define emacs-packages 
   (list 
@@ -61,8 +56,8 @@
     "tree-sitter-cpp"
     "tree-sitter-elm"
     "tree-sitter-css"
-    ; "tree-sitter-php"
     "tree-sitter-org"
+    ; "tree-sitter-php"
     ; "tree-sitter-ruby"
     "tree-sitter-bash"
     "tree-sitter-rust"
@@ -71,15 +66,16 @@
     "tree-sitter-html"
     "tree-sitter-julia"
     ; "tree-sitter-ocaml"
+    ; "tree-sitter-racket"
     "tree-sitter-python"
     "tree-sitter-scheme"
-    ; "tree-sitter-racket"
     "tree-sitter-clojure"
     "tree-sitter-haskell"
     "tree-sitter-markdown"
     "tree-sitter-typescript"
     "tree-sitter-javascript"
-    "emacs-next-tree-sitter"))
+    ; "emacs-next-tree-sitter"
+    ))
 
 (define common-packages 
   (list 
@@ -90,9 +86,13 @@
     "unzip"
     "neovim"
     "docker" 
+    "zoxide" 
+    "direnv"
+    "nushell"
     "recutils"
     "findutils"
-    "syncthing")) 
+    "syncthing"
+    "bash-completion")) 
 
 (define minisforum-packages
   (list 
@@ -116,17 +116,17 @@
     "ghc"
     "sddm"
     "rofi"
+    "sbcl"
     "picom"
     "conky"
     "xmonad"
-    "cabal-install"
-    "sbcl"
     "stumpwm"
-    "sbcl-stumpwm-swm-gaps"
-    "sbcl-stumpwm-ttf-fonts"
     "xorg-server"
     "python-pywal"
-    "ghc-xmonad-contrib"))
+    "cabal-install"
+    "ghc-xmonad-contrib"
+    "sbcl-stumpwm-swm-gaps"
+    "sbcl-stumpwm-ttf-fonts"))
 
 (define common-services 
   (list
@@ -145,7 +145,6 @@
          (append common-packages
                  font-packages
                  emacs-packages
-                 linux-packages
                  graph-packages
                  (if minisforum? minisforum-packages (list)))))
   (services (append common-services)))

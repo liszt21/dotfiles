@@ -1,5 +1,8 @@
-source "$HOME/Dotfiles/script/kit.sh"
-try-init-kit
+if [ -f "$HOME/Dotfiles/script/kit.sh" ]; then 
+  source "$HOME/Dotfiles/script/kit.sh" 
+  try-init-kit
+  # conda activate
+fi
 
 # guix
 export GUIX_BUILD_OPTIONS="--substitute-urls=https://mirror.sjtu.edu.cn/guix/"
@@ -24,5 +27,3 @@ eval "$(direnv hook bash)"
 eval "$(starship init bash)"
 # eval "$(conda shell.bash hook)"
 # eval "$(emacy hook bash)"
-
-# conda activate
