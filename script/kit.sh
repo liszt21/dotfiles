@@ -44,6 +44,8 @@ load-conda() {
         unset __conda_setup
         # <<< conda initialize <<<
     fi
+
+    command-exists conda && conda activate
 }
 
 load-nvm () {
