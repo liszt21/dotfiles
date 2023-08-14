@@ -73,9 +73,7 @@
     "tree-sitter-haskell"
     "tree-sitter-markdown"
     "tree-sitter-typescript"
-    "tree-sitter-javascript"
-    ; "emacs-next-tree-sitter"
-    ))
+    "tree-sitter-javascript"))
 
 (define common-packages 
   (list 
@@ -86,9 +84,11 @@
     "unzip"
     "neovim"
     "docker" 
+    "docker-cli"
+    "docker-compose"
     "zoxide" 
     "direnv"
-    "nushell"
+    ;; "nushell"
     "recutils"
     "findutils"
     "syncthing"
