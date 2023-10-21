@@ -1,3 +1,7 @@
-(use-modules (gnu) (guix) (lisux config systems))
+(use-modules
+ (gnu)
+ (guix))
+(use-modules (lisux config systems))
 
-(operating-system (inherit base-wsl-os))
+(operating-system
+  (inherit base-wsl-os))

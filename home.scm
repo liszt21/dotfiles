@@ -14,22 +14,6 @@
   (gnu home services shells)
   (gnu home services shepherd))
 
-(defmacro try-use (sym) `(if (defined? (if (list? ,sym) (eval ,sym) ,sym)) ,sym #f))
-
-; (define linux? (eq? (vector-ref (uname) 0) "Linux"))
-; (define macos? (eq? (vector-ref (uname) 0) "Darwin"))
-; (define distribution-name
-;   (cond (macos? "macos")
-;         (linux? 
-;           (cond 
-;             ((file-exists? "/etc/arch-release") "archlinux")
-;             ((file-exists? "/etc/fedora-release") "fedora")
-;             (else "unknown")
-;           ))
-;         (else "unknown")))
-; (define archlinux? (eq? distribution-name "archlinux"))
-; (define fedora? (eq? distribution-name "fedora"))
-
 (define machine-name (vector-ref (uname) 1))
 (define minisforum? (if (eq? machine-name "minisforum") #t #f))
 
@@ -51,6 +35,7 @@
     "librime"
     "libvterm"
     "offlineimap3"
+    "python-epc"
     "tree-sitter-c"
     "tree-sitter-go"
     "tree-sitter-cpp"
@@ -81,11 +66,15 @@
     "bat"
     "git"
     "zile"
+    "node"
+    "cmake"
+    "python"
+    "python-pip"
+    "gcc-toolchain"
     "unzip"
+    "rsync"
     "neovim"
-    "docker" 
-    "docker-cli"
-    "docker-compose"
+    "podman"
     "zoxide" 
     "direnv"
     ;; "nushell"

@@ -6,4 +6,7 @@ config/rime
 
 *.errors
 
+.lsp
+.clj-kondo
+
 history.txt
