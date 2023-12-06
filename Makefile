@@ -16,3 +16,6 @@ update:
 
 init:
 	ln -sf $(shell pwd)/config/guix/cahnnels.scm ~/.config/guix/channels.scm
+
+wsl:
+	guix system image --image-type=wsl2 ./config/system/wsl.scm

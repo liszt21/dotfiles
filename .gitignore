@@ -8,5 +8,7 @@ config/rime
 
 .lsp
 .clj-kondo
+.joyride
+.calva
 
 history.txt
